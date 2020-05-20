@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+html {
+  font-family: "Verdana", "Arial", "Sans-serif";
+  height: 100%;
+}
+
+body {
+  display: flex;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.right-container {
+  width: 50%;
+  height: 100%;
+}
+
+.left-container {
+  text-align: right;
+  width: 50%;
+  height: 100%;
+}
+
+.left-container { 
+  background: url('https://i.imgur.com/CLb0H0z.png') no-repeat center center;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(158, 28, 201, 0.5);
+}
+
+.right-container, .left-container, .name, .about, .links, .player, .portfolio, .creator {
+  padding: 3% 3%;
+}
+
+.name {
+  height: 100%;
+}
+
+.about {
+  width:80%;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+h1 {
+  color: white;
+  font-size: 2.7em
+}
+
+h2 {
+  font-size: 1.4em
+}
+
+/* Contact links */
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  color: #9e1cc9;
+}
+
+.creator {
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+.portfolio-img {
+  width: 100px;
+  height: 100px;
+  margin: 2%;
+  filter: grayscale(100%);
+}
+
+.portfolio-link :hover {
+  transform: scale(1.3);
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(0%);
+}
+
+
+@media only screen and (max-width: 677px) {
+
+  .left-container, .right-container {
+    width: 100vw;
+  }
+
+  .name {
+    margin: 5%;
+  }
+
+  .right-container {
+    height: 100%;
+  }
+
+  .left-container {
+    height: 40vh;
+  }
+
+  .name {
+    text-align: center;
+  }
+  
+  .about {
+    width:100%;
+    text-align: center;
+  }
+
+  .links {
+    text-align: center;
+  }
+
+  .player {
+    text-align: center;
+  }
+  
+  .portfolio {
+    text-align: center;
+  }
+
+  .right {
+    float: none;
+  }
