@@ -1,2 +1,4 @@
 # aboutme
-A short description about Sollabong
+A single "name-card" page made with HTML and CSS.
+Desktop view
+Mobil view
